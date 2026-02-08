@@ -59,7 +59,7 @@ paios daily-reflect
 }
 ```
 
-## How it works
+## How it works?
 ```mermaid
 graph TD
   CLI[paios CLI] --> Core[Config & Logger]
