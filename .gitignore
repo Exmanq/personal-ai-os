@@ -1,0 +1,11 @@
+.venv
+__pycache__
+*.pyc
+.env
+.cache
+.coverage
+htmlcov
+.pytest_cache
+.mypy_cache
+.DS_Store
+personal_ai_os.egg-info/

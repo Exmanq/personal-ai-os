@@ -1,0 +1,30 @@
+[
+  {
+    "id": "bbfef7dd-6c99-498c-88c0-6b86d8b42d20",
+    "title": "Progress for goal: Ship Personal AI OS demo",
+    "due": "2026-02-08",
+    "status": "planned",
+    "related_goal": "goal-1"
+  },
+  {
+    "id": "e83ad8c5-311f-4e86-815b-83f94391f1f6",
+    "title": "Progress for goal: Establish daily reflection habit",
+    "due": "2026-02-09",
+    "status": "planned",
+    "related_goal": "goal-2"
+  },
+  {
+    "id": "0179a7ac-9841-4dd5-a4e7-6a0acf00aa37",
+    "title": "Progress for goal: Demo goal: deliver wow",
+    "due": "2026-02-10",
+    "status": "planned",
+    "related_goal": "b935bb37-dc34-4ab5-86ae-6dfc5ad9bae0"
+  },
+  {
+    "id": "0f7e78e9-2a23-4765-8561-33be7a69aede",
+    "title": "Progress for goal: Demo goal: deliver wow",
+    "due": "2026-02-11",
+    "status": "planned",
+    "related_goal": "7445e491-74f3-4e9f-a3d5-60118f82b0f3"
+  }
+]

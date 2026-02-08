@@ -1,0 +1,26 @@
+name: Feature Request
+description: Suggest an idea
+labels: [enhancement]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What do you want to add?
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why
+      description: Why is this valuable?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

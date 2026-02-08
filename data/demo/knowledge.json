@@ -1,0 +1,4 @@
+[
+  {"question": "What is Personal AI OS?", "answer": "A local-first CLI to manage notes, goals, tasks, and reflections."},
+  {"question": "How to plan the week?", "answer": "Run 'paios plan-week' to auto-generate tasks from goals."}
+]

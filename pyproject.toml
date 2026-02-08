@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "personal-ai-os"
+version = "0.1.0"
+description = "Personal AI OS for notes, goals, tasks, reflections, and knowledge with offline-friendly mock LLM."
+readme = "README.md"
+authors = [{ name = "Gатс" }]
+license = {text = "MIT"}
+requires-python = ">=3.11"
+dependencies = [
+  "typer>=0.12",
+  "rich>=13.7",
+  "pydantic>=2.7",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4",
+  "pytest-cov>=4.1",
+  "ruff>=0.4.10",
+  "black>=24.4",
+  "pre-commit>=3.7",
+]
+
+[project.scripts]
+paios = "personal_ai_os.cli:app"
+
+[tool.setuptools]
+package-dir = {"personal_ai_os" = "src/os"}
+packages = [
+  "personal_ai_os",
+  "personal_ai_os.core",
+  "personal_ai_os.modules",
+  "personal_ai_os.llm",
+]
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "C4", "SIM", "TID", "ANN"]
+ignore = ["ANN401"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/os/cli.py" = ["B008"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.coverage.run]
+branch = true
+source = ["personal_ai_os"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
