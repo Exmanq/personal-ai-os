@@ -23,7 +23,7 @@ jobs:
           .venv/bin/pip install -e .[dev]
       - name: Lint
         run: |
-          .venv/bin/ruff src tests
+          .venv/bin/ruff check src tests
           .venv/bin/black --check src tests
       - name: Test
         run: .venv/bin/pytest
